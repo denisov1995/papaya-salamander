@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html amp lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoBoss</title>
+    <meta content="https://CryptoBoss.com/" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="ru" property="og:locale" />
+    <meta content="index, follow, noarchive" name="robots" />
+    <meta content="CryptoBoss.com" name="description" />
+    <meta content="CryptoBoss.com casino" property="og:title" />
+    <meta content="CryptoBoss.com" property="og:description" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@CryptoBoss.com" />
+    <meta name="twitter:title" content="CryptoBoss.com" />
+    <meta name="twitter:description" content="CryptoBoss.com" />
+    <meta name="twitter:creator" content="@CryptoBoss.com" />
+    <meta name="twitter:image" content="logo.svg" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="CryptoBoss.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://CryptoBoss.com" />
+    <meta property="og:image" content="logo.svg" />
+    <meta property="og:description" content="CryptoBoss.com" />
+    <meta property="og:site_name" content="CryptoBoss.com" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta
+      name="amp-script-src"
+      content="sha384-hkCwgR-5yG0e_je-b8qdjxLBINDCdCOFhspaZWG-Y2Vqg2jO__gFrfvpIGTqSEh2 sha384-zwZEwaQ2bXM3vsS77BBcNc8b-3r31GpGxFGIqYF0tkIQpx24nN6HwjmeVu6ZpaV2 sha384-fVcM2qTWtXOhYk6UAhIv3DDQrumpip43le27rBFNZmdEy4RKm0G0pjtaG7F1412d"
+    />
+
+    <script
+      async
+      custom-element="amp-script"
+      src="https://cdn.ampproject.org/v0/amp-script-0.1.js"
+    ></script>
+
+    <script
+      async
+      custom-element="amp-accordion"
+      src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"
+    ></script>
+
+    <meta name="robots" content="noindex" />
+
+    <style>
+      /* games */
+      .games__section {
+        padding-top: 32px;
+      }
+
+      .games__list {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .games__item-big {
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+
+      .games__item a {
+        width: 180px;
+        height: 180px;
+      }
+
+      .games__item.games__item-big a {
+        width: 385px;
+        height: 444px;
+      }
+
+      .games__list-rew .games__item-big {
+        grid-column: 5/6;
+        grid-row: 1/3;
+      }
+
+      .games__card-block {
+        background-color: #231452;
+        border-radius: 16px;
+      }
+
+      .games__card-image {
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .games__card-title {
+        font-family: "Montserrat-Regular";
+        font-weight: 600;
+        font-size: 12px;
+        color: #c0c0c8;
+        padding: 16px 0;
+        text-align: center;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        width: 100%;
+      }
+
+      .slider__list {
+        gap: 8px;
+        max-width: 100%;
+        overflow: auto;
+      }
+
+      .slider__list-flex {
+        display: flex;
+        gap: 40px;
+      }
+
+      .slider__link-flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .slider__list-grid {
+        display: grid !important;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+      }
+      .slider__item {
+        display: flex;
+      }
+      .slider__list::-webkit-scrollbar {
+        display: none;
+      }
+
+      .panel-games {
+        border-radius: 8px;
+        background-color: #231452;
+        padding: 20px 16px;
+      }
+
+      .panel-games__name {
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 16px;
+        white-space: nowrap;
+        color: #e1e1e2;
+      }
+
+      .games__link {
+        width: 100%;
+      }
+
+      @media (max-width: 1025px) {
+        .games__item:last-child,
+        .games__item:nth-last-child(2) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 669px) {
+        .games__item:last-child,
+        .games__item:nth-last-child(2) {
+          display: block;
+        }
+        .games__list {
+          grid-template-rows: repeat(4, 1fr);
+          grid-auto-flow: column;
+        }
+        .games__list-rew .games__item-big {
+          grid-column: 1/3;
+          grid-row: 1/3;
+        }
+      }
+      @media (max-width: 385px) {
+        .games__item.games__item-big a {
+          width: 100%;
+          height: auto;
+        }
+
+        .games__item a {
+          width: 100%;
+          height: auto;
+        }
+      }
+      @media (max-width: 360px) {
+        .games__list,
+        .games__list-rew .games__item-big {
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 8px;
+          column-gap: 5px;
+        }
+        .games__card-image {
+          width: 100%;
+          height: auto;
+        }
+        .games__item {
+          width: calc(50% - 3px);
+        }
+        .games__item-big {
+          width: 100%;
+        }
+      }
+      /* games */
+
+      /* Banner */
+      .banner {
+        max-width: 1200px;
+        margin: 20px auto 48px;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .header__wrapper amp-script {
+        order: 3;
+      }
+
+      .ppp {
+        position: relative;
+        min-height: 400px;
+      }
+
+      .banner-img img {
+        object-fit: cover;
+      }
+
+      .banner-img__item {
+        display: none;
+        align-items: center;
+        position: relative;
+        border-radius: 8px;
+      }
+
+      .banner__pagination {
+        position: absolute;
+        width: 136px;
+        height: 7px;
+        bottom: 6px;
+        display: flex;
+        gap: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+
+      .games-section {
+        position: relative;
+        height: 1125px;
+      }
+
+      .games-section amp-script {
+        width: 100%;
+        height: 100%;
+      }
+
+      .banner__text-inner {
+        position: absolute;
+        left: 20px;
+      }
+
+      .banner__pagination-1,
+      .banner__pagination-2 {
+        flex: 1 0 33%;
+        border-radius: 28px;
+        background-color: #6b5e95;
+      }
+
+      .banner__pagination-1.active,
+      .banner__pagination-2.active {
+        background-color: #edc647;
+      }
+
+      .banner-img__list {
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 1200px;
+        height: 320px;
+      }
+
+      .banner-img__list li.active {
+        display: flex;
+      }
+
+      .banner__text {
+        max-width: 471px;
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
+      }
+
+      .banner__text-inner p {
+        font-family: "Montserrat-Medium";
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .text-block__content-button {
+        background-color: transparent;
+        border: none;
+      }
+
+      .text-block__content-button-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+      }
+
+      #quick-links .text-block__content-button-wrapper {
+        justify-content: space-between;
+      }
+
+      #quick-links section[expanded] .text-block__content-button-wrapper img {
+        transform: rotate(0deg);
+      }
+
+      .header amp-script {
+        width: 100%;
+      }
+
+      amp-accordion section[expanded] .toggle-icon {
+        transform: rotate(180deg);
+      }
+
+      amp-accordion section .hide-text,
+      amp-accordion section[expanded] .show-text {
+        display: none;
+      }
+
+      amp-accordion section[expanded] .hide-text,
+      amp-accordion section .show-text {
+        display: block;
+      }
+
+      amp-accordion section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text-block__content-button {
+        order: 2;
+      }
+
+      .burger-menu amp-script {
+        width: auto;
+      }
+
+      @media (max-width: 870px) {
+        .header__wrapper amp-script {
+          width: auto;
+        }
+      }
+
+      @media (max-width: 669px) {
+        .games-section {
+          position: relative;
+          height: 2165px;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .banner-img__list {
+          height: 300px;
+        }
+      }
+
+      /* Banner */
+    </style>
+
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="./content/css/style.css" />
+
+    <noscript>
+      <link rel="stylesheet" href="./noindex/games.css" />
+      <link rel="stylesheet" href="./content/css/swiper-style.css" />
+    </noscript>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container__mob">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#">
+            <img
+              class="logo__img"
+              src="./content/img/logo.svg"
+              width="124"
+              height="28"
+              alt="Logo"
+            />
+          </a>
+          <div class="header__control control-mob">
+            <div class="header__control-btn">
+              <button class="btn__reg">
+                <span class="btn__link-reg">Вход</span>
+              </button>
+              <button class="btn__main-menu">
+                <span>Регистрация</span>
+              </button>
+            </div>
+          </div>
+
+          <amp-script script="hello-world">
+            <div class="burger-menu">
+              <div class="nav-menu__burger-desc nav-menu__burger-mob">
+                <nav class="header__nav-menu">
+                  <div class="nav-menu__desc">
+                    <div class="nav-menu__name">Казино</div>
+                    <a class="nav-menu__link" href="#">Казино</a>
+                    <a class="nav-menu__link" href="#">Обзоры</a>
+                    <a class="nav-menu__link" href="#">Казино игры</a>
+                  </div>
+                  <div class="nav-menu__desc">
+                    <div class="nav-menu__name">Бонусы и ставки</div>
+                    <a class="nav-menu__link" href="#">Бонусы</a>
+                    <a class="nav-menu__link" href="#">Азартные игры</a>
+                    <a class="nav-menu__link" href="#">Ставки на спорт</a>
+                  </div>
+                </nav>
+
+                <div class="header__control">
+                  <div class="header__control-btn">
+                    <button class="btn__reg">
+                      <span class="btn__link-reg">Вход</span>
+                    </button>
+                    <button class="btn__main-menu">
+                      <span>Регистрация</span>
+                    </button>
+                  </div>
+                  <button class="close-menu-btn">
+                    <img
+                      src="./content/img/close.svg"
+                      width="12"
+                      height="12"
+                      alt="desc"
+                    />
+                  </button>
+                </div>
+
+                <amp-script script="lang">
+                  <div class="header-lang mob-menu-lang-choose">
+                    <div class="choose-lang">
+                      <!--  -->
+                      <div tabindex="0" class="choose-lang-button">
+                        <img
+                          width="16"
+                          height="16"
+                          src="./content/img/flags/Russia.svg"
+                          class="flag-lang flag-lang-main"
+                          alt="Russia"
+                        />
+                        <span>Русский</span>
+                        <img
+                          class="toggle-icon"
+                          width="16"
+                          height="16"
+                          src="./content/img/ArrowLang.svg"
+                          alt="Arrow"
+                        />
+                      </div>
+                      <ul class="choose-lang-list choose-lang-list-2">
+                        <li class="choose-lang__item">
+                          <a
+                            class="choose-lang-box"
+                            href="#"
+                            rel="nofollow"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="20"
+                              height="20"
+                              class="flag-lang lazyloaded"
+                              src="./content/img/flags/England.svg"
+                              alt="Русский"
+                            />
+                            <div class="choose-lang__country">
+                              <span class="choose-lang__ru">Английский</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="choose-lang__item">
+                          <a
+                            class="choose-lang-box"
+                            href="#"
+                            rel="nofollow"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="20"
+                              height="20"
+                              class="flag-lang lazyloaded"
+                              src="./content/img/flags/Kazakhstan.svg"
+                              alt="Русский"
+                            />
+                            <div class="choose-lang__country">
+                              <span class="choose-lang__ru">Казахский</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="choose-lang__item">
+                          <a
+                            class="choose-lang-box active"
+                            href="#"
+                            rel="nofollow"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="20"
+                              height="20"
+                              class="flag-lang lazyloaded"
+                              src="./content/img/flags/Russia.svg"
+                              alt="Русский"
+                            />
+                            <div class="choose-lang__country">
+                              <span class="choose-lang__ru">Русский</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="choose-lang__item">
+                          <a
+                            class="choose-lang-box"
+                            href="#"
+                            rel="nofollow"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="20"
+                              height="20"
+                              class="flag-lang lazyloaded"
+                              src="./content/img/flags/Turkey.svg"
+                              alt="Русский"
+                            />
+                            <div class="choose-lang__country">
+                              <span class="choose-lang__ru">Турецкий</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="choose-lang__item">
+                          <a
+                            class="choose-lang-box"
+                            href="#"
+                            rel="nofollow"
+                            target="_blank"
+                          >
+                            <img
+                              loading="lazy"
+                              width="20"
+                              height="20"
+                              class="flag-lang lazyloaded"
+                              src="./content/img/flags/Ukraina.svg"
+                              alt="Русский"
+                            />
+                            <div class="choose-lang__country">
+                              <span class="choose-lang__ru">Украинский</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </amp-script>
+
+                <script id="lang" type="text/plain" target="amp-script">
+                  let headerLangList=document.querySelector(".choose-lang-list"),
+                  headerLangBtn=document.querySelector(".choose-lang-button");
+
+                  headerLangBtn.onclick = () => {
+                      headerLangList.classList.toggle("show")
+                  }
+                </script>
+              </div>
+            </div>
+            <button class="burger__button-mob">
+              <img
+                loading="lazy"
+                src="./content/img/Burger.svg"
+                alt="desc"
+                width="24"
+                height="24"
+              />
+            </button>
+          </amp-script>
+
+          <!-- Add [target="amp-script"] to the <script> element. -->
+          <script id="hello-world" type="text/plain" target="amp-script">
+            const headerMenuMob = document.querySelector('.burger-menu');
+            const burgerBtn = document.querySelector('.burger__button-mob');
+            const burgerBtnClose = document.querySelector('.close-menu-btn');
+            burgerBtn.onclick = () => {
+              headerMenuMob.classList.toggle('active')
+            }
+            burgerBtnClose.onclick = () => {
+              headerMenuMob.classList.toggle('active')
+            }
+          </script>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="banner">
+        <ul class="banner-img__list">
+          <li class="banner-img__item active">
+            <div class="banner__text-inner">
+              <div class="banner__text">Летний Кэшбэк</div>
+              <p>Кэш-бонус ₽400/€4/$4 за каждый депозит</p>
+              <p>Депозит от ₽2 500/€25/$25</p>
+              <a class="btn__main btn__link-content" href="#">ПОПОЛНИТЬ СЧЕТ</a>
+            </div>
+            <div class="banner-img">
+              <picture>
+                <source
+                  media="(max-width:360px)"
+                  srcset="content/img/banner/1_banner_mob.webp"
+                  width="344"
+                  height="300"
+                />
+                <source
+                  media="(max-width:670px)"
+                  srcset="content/img/banner/1_banner_tablet.webp"
+                  width="653"
+                  height="320"
+                />
+                <source
+                  media="(max-width:1010px)"
+                  srcset="content/img/banner/1_banner_laptop.webp"
+                  width="1009"
+                  height="320"
+                />
+                <source
+                  srcset="content/img/banner/1_banner_desc.webp"
+                  width="1200"
+                  height="320"
+                />
+                <img
+                  src="content/img/banner/1_banner_desc.webp"
+                  alt="Banner-1"
+                  width="1200"
+                  height="320"
+                />
+              </picture>
+            </div>
+          </li>
+          <li class="banner-img__item">
+            <div class="banner__text-inner">
+              <div class="banner__text">До 275%<br />к депозитам + 150ФС</div>
+              <p>Сделайте депозит картой</p>
+              <p>или криптой и забирайте бонус</p>
+              <a class="btn__main btn__link-content" href="#">ЗАБРАТЬ БОНУС</a>
+            </div>
+            <div class="banner-img">
+              <picture>
+                <source
+                  media="(max-width:360px)"
+                  srcset="content/img/banner/2_banner_mob.webp"
+                  width="344"
+                  height="300"
+                />
+                <source
+                  media="(max-width:670px)"
+                  srcset="content/img/banner/2_banner_tablet.webp"
+                  width="653"
+                  height="320"
+                />
+                <source
+                  media="(max-width:1010px)"
+                  srcset="content/img/banner/2_banner_laptop.webp"
+                  width="1009"
+                  height="320"
+                />
+                <source
+                  srcset="content/img/banner/2_banner_desc.webp"
+                  width="1200"
+                  height="320"
+                />
+                <img
+                  src="content/img/banner/2_banner_desc.webp"
+                  loading="lazy"
+                  alt="Banner-2"
+                  width="1200"
+                  height="320"
+                />
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="banner__pagination">
+          <li class="banner__pagination-1 active"></li>
+          <li class="banner__pagination-2"></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="text-block__content">
+          <h2 class="h2__title text-block__content-title">
+            Безопасность игроков
+          </h2>
+          <div class="text-block__content-visible">
+            <p>
+              Vavada предлагает своим игрокам широкий и качественный выбор
+              онлайн-игр и других развлечений. Vavada заботится о своих
+              клиентах, поэтому Вам предоставляются рекомендации по
+              ответственной игре в онлайн-казино.
+            </p>
+            <p>
+              Основываясь на ответственном и справедливом отношении к процессу
+              игры и, в частности, к каждому клиенту, Vavada придерживается
+              политики ответственного отношения к игре среди своих клиентов.
+            </p>
+            <p>
+              Основываясь на ответственном и справедливом отношении к процессу
+              игры и, в частности, к каждому клиенту, Vavada придерживается
+              политики ответственного отношения к игре среди своих клиентов.
+            </p>
+          </div>
+          <amp-accordion id="my-accordion" disable-session-states>
+            <section>
+              <button class="text-block__content-button">
+                <div class="text-block__content-button-wrapper">
+                  <span class="show-text">Показать еще</span>
+                  <span class="hide-text">Свернуть</span>
+                  <img
+                    class="toggle-icon"
+                    width="16"
+                    height="16"
+                    src="./content/img/Arrow.svg"
+                    alt="Arrow"
+                  />
+                </div>
+              </button>
+              <div class="text-block__content-hidden">
+                <p>
+                  Vavada предлагает своим игрокам широкий и качественный выбор
+                  онлайн-игр и других развлечений. Vavada заботится о своих
+                  клиентах, поэтому Вам предоставляются рекомендации по
+                  ответственной игре в онлайн-казино.
+                </p>
+                <p>
+                  Основываясь на ответственном и справедливом отношении к
+                  процессу игры и, в частности, к каждому клиенту, Vavada
+                  придерживается политики ответственного отношения к игре среди
+                  своих клиентов.
+                </p>
+                <p>
+                  Основываясь на ответственном и справедливом отношении к
+                  процессу игры и, в частности, к каждому клиенту, Vavada
+                  придерживается политики ответственного отношения к игре среди
+                  своих клиентов.
+                </p>
+              </div>
+            </section>
+          </amp-accordion>
+          <a class="btn__link-content" href="#">Зеркало</a>
+        </div>
+
+        <div class="games-section">
+          <amp-script layout="fill" script="hello123" data-ampdevmode>
+            <div class="panel"></div>
+            <div class="block_big"></div>
+          </amp-script>
+
+          <!-- Add [target="amp-script"] to the <script> element. -->
+          <script id="hello123" type="text/plain" target="amp-script">
+            // Загрузка содержимого panel
+             const baseURI = `http://${location.href.split('/')[2]}/`;
+             const absoluteURLPanel = new URL('./noindex/panel.html', baseURI);
+             const absoluteURLGameBig = new URL('./noindex/gameBig.html', baseURI);
+             fetch(absoluteURLPanel)
+                .then((response) => response.text())
+                .then((data) => {
+                    const panel = document.querySelector(".panel");
+                    const div = document.createElement('div');
+                    div.innerHTML = data;
+                    panel.appendChild(div);;
+                })
+                .catch((error) => console.error("Error loading panel:", error));
+
+            // Загрузка содержимого block_big
+
+            fetch(absoluteURLGameBig)
+                .then((response) => response.text())
+                .then((data) => {
+                    const game = document.querySelector(".block_big");
+                    const div = document.createElement('div');
+                    div.innerHTML = data;
+                    game.appendChild(div);;
+                })
+                .catch((error) => console.error("Error loading block_big:", error));
+          </script>
+        </div>
+
+        <!-- <div class="articles__block"> -->
+        <amp-accordion
+          id="quick-links"
+          class="articles__block"
+          disable-session-states
+        >
+          <section>
+            <div class="articles__header-wrapper">
+              <div class="text-block__content-button-wrapper">
+                <h3 id="soder" class="h3__title">Быстрые ссылки</h3>
+                <img
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  alt="arrow"
+                  class="toggle-icon"
+                  src="./content/img/Arrow.svg"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="articles__items-wrapper">
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/zap_icon.svg"
+                      alt="Разнообразие"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Разнообразие aзартных игр</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/loader_icon.svg"
+                      alt="Влияние"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Влияние на местное развитие</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/trending-up_icon.svg"
+                      alt="Экономический"
+                    />
+                  </div>
+                  <span class="articles-item-title">Экономический вклад</span>
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/tv_icon.svg"
+                      alt="Культурное"
+                    />
+                  </div>
+                  <span class="articles-item-title">Культурное влияние</span>
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/users_icon.svg"
+                      alt="Социальные"
+                    />
+                  </div>
+                  <span class="articles-item-title">Социальные риски</span>
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/link_icon.svg"
+                      alt="Инновации"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Инновации в игровой индустрии</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/navigation_icon.svg"
+                      alt="Необходимость"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Необходимость регулирования</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/briefcase_icon.svg"
+                      alt="Воздействие"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Воздействие на занятость</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/rss_icon.svg"
+                      alt="Ответственное"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Ответственное игровое поведение</span
+                  >
+                </a>
+
+                <a href="#" class="articles-item">
+                  <div class="articles-item__image">
+                    <img
+                      loading="lazy"
+                      height="12"
+                      width="12"
+                      class="articles-item__img"
+                      src="./content/img/icons/aperture_icon.svg"
+                      alt="Этические"
+                    />
+                  </div>
+                  <span class="articles-item-title"
+                    >Этические и юридические вопросы</span
+                  >
+                </a>
+              </div>
+            </div>
+          </section>
+        </amp-accordion>
+        <!-- </div> -->
+
+        <div class="text-noblock__content">
+          <h2 class="h2__title h2__main-title">Безопасность игроков</h2>
+          <div class="text-block__content-visible text-noblock__content-text">
+            <p>
+              Vavada предлагает своим игрокам широкий и качественный выбор
+              онлайн-игр и других развлечений. Vavada заботится о своих
+              клиентах, поэтому Вам предоставляются рекомендации по
+              ответственной игре в онлайн-казино.
+            </p>
+            <p>
+              Основываясь на ответственном и справедливом отношении к процессу
+              игры и, в частности, к каждому клиенту, Vavada придерживается
+              политики ответственного отношения к игре среди своих клиентов.
+            </p>
+            <p>
+              Основываясь на ответственном и справедливом отношении к процессу
+              игры и, в частности, к каждому клиенту, Vavada придерживается
+              политики ответственного отношения к игре среди своих клиентов.
+            </p>
+          </div>
+          <amp-accordion id="my-accordion" disable-session-states>
+            <section>
+              <button class="text-block__content-button">
+                <div class="text-block__content-button-wrapper">
+                  <span class="show-text">Показать еще</span>
+                  <span class="hide-text">Свернуть</span>
+                  <img
+                    class="toggle-icon"
+                    width="16"
+                    height="16"
+                    src="./content/img/Arrow.svg"
+                    alt="Arrow"
+                  />
+                </div>
+              </button>
+              <div
+                class="text-block__content-hidden text-noblock__content-text"
+              >
+                <p>
+                  Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem
+                </p>
+                <p>
+                  Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem
+                </p>
+                <h2 class="h2__title h2__main-title">Lorem ipsum dolor</h2>
+                <p>
+                  Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas
+                </p>
+              </div>
+            </section>
+          </amp-accordion>
+          <a class="btn__main btn__link-content" href="#">Зеркало</a>
+        </div>
+
+        <div class="content-info">
+          <h2 class="h2__title h2__main-title">Основные характеристики</h2>
+          <div class="content-info__inner">
+            <div class="content-info__row">
+              <div class="content-info__name content-info__name-title">
+                Характеристики
+              </div>
+              <div class="content-info__desc content-info__name-title">
+                Описание
+              </div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name">Год основания</span>
+              </div>
+              <div class="content-info__desc">2016</div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name">Лицензия</span>
+              </div>
+              <div class="content-info__desc">Кипр</div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name">Языки</span>
+              </div>
+              <div class="content-info__desc">
+                Русский, английский, китайский и другие
+              </div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name">Доступные валюты</span>
+              </div>
+              <div class="content-info__desc">
+                Российский рубль, доллар США, евро и многие другие
+              </div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name">Минимальная ставка</span>
+              </div>
+              <div class="content-info__desc">10 рублей</div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name"
+                  >Бонус на первый депозит</span
+                >
+              </div>
+              <div class="content-info__desc">
+                500% до 75 000 рублей (на четыре депозита)
+              </div>
+            </div>
+            <div class="content-info__row">
+              <div class="content-info__name content-info__block-name">
+                <div class="articles-item__image">
+                  <img
+                    loading="lazy"
+                    height="12"
+                    width="12"
+                    class="articles-item__img"
+                    src="./content/img/icons/zap_icon.svg"
+                    alt="Разнообразие"
+                  />
+                </div>
+                <span class="content-info__text-name"
+                  >Доступные развлечения</span
+                >
+              </div>
+              <div class="content-info__desc">
+                Ставки на спорт, онлайн-казино, игры с живыми дилерами и другие
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-info-2">
+          <h2 class="h2__title h2__main-title">Безопасность игроков</h2>
+          <div class="content-info__text">
+            <p class="content-info__text-p">
+              Vavada предлагает своим игрокам широкий и качественный выбор
+              онлайн-игр и других развлечений. Vavada заботится о своих
+              клиентах, поэтому Вам предоставляются рекомендации по
+              ответственной игре в онлайн-казино.
+            </p>
+            <p class="content-info__text-p">
+              Vavada предлагает своим игрокам широкий и качественный выбор
+              онлайн-игр и других развлечений. Vavada заботится о своих
+              клиентах, поэтому Вам предоставляются рекомендации по
+              ответственной игре в онлайн-казино.
+            </p>
+            <ol class="content-info__text-list">
+              <li class="content-info__text-item">Разнообразие aзартных игр</li>
+              <li class="content-info__text-item">Экономический вклад</li>
+              <li class="content-info__text-item">Социальные риски</li>
+              <li class="content-info__text-item">
+                Необходимость регулирования
+              </li>
+              <li class="content-info__text-item">
+                Ответственное игровое поведение
+              </li>
+              <li class="content-info__text-item">
+                Влияние на местное развитие
+              </li>
+              <li class="content-info__text-item">Культурное влияние</li>
+              <li class="content-info__text-item">
+                Инновации в игровой индустрии
+              </li>
+              <li class="content-info__text-item">Воздействие на занятость</li>
+              <li class="content-info__text-item">
+                Этические и юридические вопросы
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="ppp">
+          <amp-script layout="container" script="faqq" data-ampdevmode>
+            <div class="faq">
+              <h2 id="faq" class="h2__title h2__main-title">FAQ</h2>
+              <div
+                class="faq-content"
+                itemscope
+                itemtype="https://schema.org/FAQPage"
+              >
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Быстрые ссылки
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Общие положения и условия
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Политика конфиденциальности
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Ответственная игра
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  style="display: none"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Условия возврата
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="faq-item"
+                  itemscope
+                  itemprop="mainEntity"
+                  style="display: none"
+                  itemtype="https://schema.org/Question"
+                >
+                  <div class="faq-item-header-wrapper faq-item__box">
+                    <h3 itemprop="name" class="faq-item__title">
+                      Как пройти верификацию?
+                    </h3>
+                    <img
+                      loading="lazy"
+                      width="16"
+                      height="16"
+                      class="toggle-icon"
+                      src="./content/img/Arrow.svg"
+                      alt="arrow"
+                      title="arrow"
+                    />
+                  </div>
+                  <div
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <div
+                      class="faq-item-content-hidden faq-item-content"
+                      itemprop="text"
+                    >
+                      Torem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem. Morbi convallis
+                      convallis diam sit amet lacinia. Aliquam in elementum
+                      tellus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-pagination">
+                <button class="faq-pagination-prev-button" disabled>
+                  <img
+                    loading="lazy"
+                    width="16"
+                    height="16"
+                    class="toggle-icon"
+                    src="./content/img/ArrowBtn.svg"
+                    alt="arrow"
+                    title="arrow"
+                  />
+                </button>
+                <span class="faq-pagination-label">1/2</span>
+                <button class="faq-pagination-next-button">
+                  <img
+                    loading="lazy"
+                    width="16"
+                    height="16"
+                    class="toggle-icon"
+                    src="./content/img/ArrowBtn.svg"
+                    alt="arrow"
+                    title="arrow"
+                  />
+                </button>
+              </div>
+            </div>
+          </amp-script>
+        </div>
+        <script id="faqq" type="text/plain" target="amp-script">
+
+          function initializeAccordionAndPagination(
+            titleSelector,
+            itemSelector,
+            contentHiddenSelector,
+            toggleIconSelector,
+            visibleContentSelector,
+            paginationLabelSelector,
+            prevButtonSelector,
+            nextButtonSelector,
+            itemsPerPage
+          ) {
+              const items = document.querySelectorAll(itemSelector);
+              const buttonRight = document.querySelector('.faq-pagination-next-button');
+              const buttonLeft = document.querySelector('.faq-pagination-prev-button');
+
+              buttonRight.addEventListener('click', function () {
+                console.log(items[4])
+                items[4].display = "block"
+              })
+
+              console.log(items)
+              items.forEach(function (item) {
+                item.addEventListener('click', function () {
+                  const hiddenContent = item.querySelector(contentHiddenSelector);
+                  const visibleContent = item.querySelector(visibleContentSelector);
+                  const icon = item.querySelector(toggleIconSelector);
+
+                  if (hiddenContent) hiddenContent.classList.toggle('open');
+                  if (visibleContent) visibleContent.classList.toggle('hide');
+                  if (icon) icon.classList.toggle('rotate-180');
+                });
+              });
+
+
+          }
+
+          // Использование функции для faq
+          initializeAccordionAndPagination(
+            '.faq .h2-base-title',
+            '.faq-item',
+            '.faq-item-content-hidden',
+            '.toggle-icon',
+            '.faq-item-content-visible',
+            '.faq-pagination-label',
+            '.faq-pagination-prev-button',
+            '.faq-pagination-next-button',
+            4
+          );
+        </script>
+
+        <div class="review">
+          <h2 id="otzov" class="h2__title h2__main-title">Отзывы</h2>
+          <div
+            class="review-content"
+            itemscope
+            itemtype="http://schema.org/Review"
+          >
+            <div class="review-item review-item__item">
+              <div
+                itemprop="itemReviewed"
+                itemscope
+                itemtype="http://schema.org/Organization"
+              >
+                <meta itemprop="name" content="vavada review" />
+              </div>
+              <div class="review-item__top-title">
+                <div class="review-item__block-title">
+                  <div class="block-title__logo">
+                    <img
+                      class="review-item_-user"
+                      src="./content/img/icons/user_icon.svg"
+                      width="40"
+                      height="40"
+                      alt="User"
+                    />
+                  </div>
+                  <div class="block-title__user">
+                    <div
+                      class="block-title__user-name"
+                      itemprop="author"
+                      itemscope
+                      itemtype="http://schema.org/Person"
+                    >
+                      <h3 itemprop="name" class="review-item__title">
+                        Дима Рогов
+                      </h3>
+                    </div>
+                    <div class="review-item__data">Вчера, 15:46</div>
+                  </div>
+                </div>
+                <div class="review-item__rating review-item__rating-list">
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <div
+                class="review-item__content-prev text-block-second-content-visible text-block-second-content-dots"
+                itemprop="reviewBody"
+              >
+                <p>
+                  Понравился сервис, удобный софт, оперативная коммуникация,
+                  отношение к клиентам. Система бонусов...
+                </p>
+              </div>
+              <amp-accordion id="my-accordion" disable-session-states>
+                <section>
+                  <button
+                    class="review-item__btn-more text-block__content-button"
+                  >
+                    <div class="text-block__content-button-wrapper">
+                      <span class="show-text">Показать еще</span>
+                      <span class="hide-text">Свернуть</span>
+                      <img
+                        loading="lazy"
+                        width="16"
+                        height="16"
+                        class="toggle-icon"
+                        src="./content/img/Arrow.svg"
+                        alt="arrow"
+                        title="arrow"
+                      />
+                    </div>
+                  </button>
+                  <div
+                    class="review-item__content-full text-block__content-hidden"
+                  >
+                    <p>
+                      Morem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem
+                    </p>
+                  </div>
+                </section>
+              </amp-accordion>
+            </div>
+
+            <div class="review-item review-item__item">
+              <div
+                itemprop="itemReviewed"
+                itemscope
+                itemtype="http://schema.org/Organization"
+              >
+                <meta itemprop="name" content="vavada review" />
+              </div>
+              <div class="review-item__top-title">
+                <div class="review-item__block-title">
+                  <div class="block-title__logo">
+                    <img
+                      class="review-item_-user"
+                      src="./content/img/icons/user_icon.svg"
+                      width="40"
+                      height="40"
+                      alt="User"
+                    />
+                  </div>
+                  <div class="block-title__user">
+                    <div
+                      class="block-title__user-name"
+                      itemprop="author"
+                      itemscope
+                      itemtype="http://schema.org/Person"
+                    >
+                      <h3 itemprop="name" class="review-item__title">
+                        Шура Лоркин
+                      </h3>
+                    </div>
+                    <div class="review-item__data">11 Мар, 19:36</div>
+                  </div>
+                </div>
+                <div class="review-item__rating review-item__rating-list">
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <div
+                class="review-item__content-prev text-block-second-content-visible text-block-second-content-dots"
+                itemprop="reviewBody"
+              >
+                <p>
+                  Очень нравится букмекерская контора, приятные бонусы кэшбэка,
+                  отличные высокие коэффициенты и красивый дорогой дизайн.
+                </p>
+              </div>
+              <amp-accordion id="my-accordion" disable-session-states>
+                <section>
+                  <button
+                    class="review-item__btn-more text-block__content-button"
+                  >
+                    <div class="text-block__content-button-wrapper">
+                      <span class="show-text">Показать еще</span>
+                      <span class="hide-text">Свернуть</span>
+                      <img
+                        loading="lazy"
+                        width="16"
+                        height="16"
+                        class="toggle-icon"
+                        src="./content/img/Arrow.svg"
+                        alt="arrow"
+                        title="arrow"
+                      />
+                    </div>
+                  </button>
+                  <div
+                    class="review-item__content-full text-block__content-hidden"
+                  >
+                    <p>
+                      Morem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem
+                    </p>
+                  </div>
+                </section>
+              </amp-accordion>
+            </div>
+
+            <div class="review-item review-item__item">
+              <div
+                itemprop="itemReviewed"
+                itemscope
+                itemtype="http://schema.org/Organization"
+              >
+                <meta itemprop="name" content="vavada review" />
+              </div>
+              <div class="review-item__top-title">
+                <div class="review-item__block-title">
+                  <div class="block-title__logo">
+                    <img
+                      class="review-item_-user"
+                      src="./content/img/icons/user_icon.svg"
+                      width="40"
+                      height="40"
+                      alt="User"
+                    />
+                  </div>
+                  <div class="block-title__user">
+                    <div
+                      class="block-title__user-name"
+                      itemprop="author"
+                      itemscope
+                      itemtype="http://schema.org/Person"
+                    >
+                      <h3 itemprop="name" class="review-item__title">
+                        Лев Дорин
+                      </h3>
+                    </div>
+                    <div class="review-item__data">10 мар, 13:03</div>
+                  </div>
+                </div>
+                <div class="review-item__rating review-item__rating-list">
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <div
+                class="review-item__content-prev text-block-second-content-visible text-block-second-content-dots"
+                itemprop="reviewBody"
+              >
+                <p>
+                  Казик кайф!Олигарх из всех кейсов самый крутой,чаще всех
+                  хорошо дропает...
+                </p>
+              </div>
+              <amp-accordion id="my-accordion" disable-session-states>
+                <section>
+                  <button
+                    class="review-item__btn-more text-block__content-button"
+                  >
+                    <div class="text-block__content-button-wrapper">
+                      <span class="show-text">Показать еще</span>
+                      <span class="hide-text">Свернуть</span>
+                      <img
+                        loading="lazy"
+                        width="16"
+                        height="16"
+                        class="toggle-icon"
+                        src="./content/img/Arrow.svg"
+                        alt="arrow"
+                        title="arrow"
+                      />
+                    </div>
+                  </button>
+                  <div
+                    class="review-item__content-full text-block__content-hidden"
+                  >
+                    <p>
+                      Morem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem
+                    </p>
+                  </div>
+                </section>
+              </amp-accordion>
+            </div>
+
+            <div class="review-item review-item__item">
+              <div
+                itemprop="itemReviewed"
+                itemscope
+                itemtype="http://schema.org/Organization"
+              >
+                <meta itemprop="name" content="vavada review" />
+              </div>
+              <div class="review-item__top-title">
+                <div class="review-item__block-title">
+                  <div class="block-title__logo">
+                    <img
+                      class="review-item_-user"
+                      src="./content/img/icons/user_icon.svg"
+                      width="40"
+                      height="40"
+                      alt="User"
+                    />
+                  </div>
+                  <div class="block-title__user">
+                    <div
+                      class="block-title__user-name"
+                      itemprop="author"
+                      itemscope
+                      itemtype="http://schema.org/Person"
+                    >
+                      <h3 itemprop="name" class="review-item__title">
+                        Шура Лоркин
+                      </h3>
+                    </div>
+                    <div class="review-item__data">11 Мар, 19:36</div>
+                  </div>
+                </div>
+                <div class="review-item__rating review-item__rating-list">
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                  <img
+                    class="review-item__rating-img"
+                    loading="lazy"
+                    src="./content/img/icons/star.png"
+                    width="16"
+                    height="16"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <div
+                class="review-item__content-prev text-block-second-content-visible text-block-second-content-dots"
+                itemprop="reviewBody"
+              >
+                <p>
+                  Очень нравится букмекерская контора, приятные бонусы кэшбэка,
+                  отличные высокие коэффициенты и красивый дорогой дизайн.
+                </p>
+              </div>
+              <amp-accordion id="my-accordion" disable-session-states>
+                <section>
+                  <button
+                    class="review-item__btn-more text-block__content-button"
+                  >
+                    <div class="text-block__content-button-wrapper">
+                      <span class="show-text">Показать еще</span>
+                      <span class="hide-text">Свернуть</span>
+                      <img
+                        loading="lazy"
+                        width="16"
+                        height="16"
+                        class="toggle-icon"
+                        src="./content/img/Arrow.svg"
+                        alt="arrow"
+                        title="arrow"
+                      />
+                    </div>
+                  </button>
+                  <div
+                    class="review-item__content-full text-block__content-hidden"
+                  >
+                    <p>
+                      Morem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                      dignissim, metus nec fringilla accumsan, risus sem
+                      sollicitudin lacus, ut interdum tellus elit sed risus.
+                      Maecenas eget condimentum velit, sit amet feugiat lectus.
+                      Class aptent taciti sociosqu ad litora torquent per
+                      conubia nostra, per inceptos himenaeos. Praesent auctor
+                      purus luctus enim egestas, ac scelerisque ante pulvinar.
+                      Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                      tempor urna. Curabitur vel bibendum lorem
+                    </p>
+                  </div>
+                </section>
+              </amp-accordion>
+            </div>
+          </div>
+          <div class="review-pagination">
+            <button class="review-pagination-prev-button" disabled>
+              <img
+                loading="lazy"
+                width="16"
+                height="16"
+                class="toggle-icon"
+                src="./content/img/ArrowBtn.svg"
+                alt="arrow"
+                title="arrow"
+              />
+            </button>
+            <span class="review-pagination-label">1/1</span>
+            <button class="review-pagination-next-button" disabled>
+              <img
+                loading="lazy"
+                width="16"
+                height="16"
+                class="toggle-icon"
+                src="./content/img/ArrowBtn.svg"
+                alt="arrow"
+                title="arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__box">
+        <div class="footer__first footer__bg">
+          <div class="footer__info">
+            <div class="info__unner">
+              <a class="info__footer-logo" href="#">
+                <img
+                  class="footer-logo__img"
+                  src="./content/img/logo.svg"
+                  width="124"
+                  height="28"
+                  alt="Footer logo"
+                />
+              </a>
+              <div class="info__footer-soc">
+                <a class="footer-soc" href="#">
+                  <img
+                    class="footer-soc__img"
+                    src="./content/img/icons/Telegram_Icon.svg"
+                    width="16"
+                    height="14"
+                    alt="Telegramm"
+                  />
+                  <span class="footer-soc__text">cryptoboss_casino</span>
+                </a>
+              </div>
+            </div>
+            <div class="info__text">
+              <p>
+                CryptoBoss Casino - это онлайн-казино с широким выбором
+                лицензионных слотов и игр с живыми дилерами от ведущих мировых
+                провайдеров. Выводы до 300 000 EUR в сутки, щедрые бонусы и
+                максимальный RTP позволят вам заносить по-крупному!
+              </p>
+              <p>
+                Мы предоставляем первоклассный сервис и индивидуальный подход к
+                каждому игроку. Регистрация займёт считанные минуты, а
+                приветственные бонусы помогут вам насладиться игрой!
+              </p>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer__item-title">О нас</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Все игры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Все игры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Десктоп приложение</a>
+              </li>
+            </ul>
+            <ul class="footer-menu__list">
+              <li class="footer__item-title">Казино</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лобби</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лучшие</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Новые</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Настольные</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Лайв</a>
+              </li>
+            </ul>
+
+            <ul class="footer-menu__list">
+              <li class="footer__item-title">Информация</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Платежи</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Условия и положения</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Аффилиаты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"
+                  >Бонусы – условия и положения</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-menu__list">
+              <li class="footer__item-title">Помощь</li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Поддержка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ответственная игра</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__inner footer__bg">
+          <div class="footer-second">
+            <div class="swiper mysSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/Amatic_icon.webp"
+                    loading="lazy"
+                    alt="Amatic_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/bgaming_icon.webp"
+                    loading="lazy"
+                    alt="bgaming_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/blueprint_icon.webp"
+                    loading="lazy"
+                    alt="blueprint_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/ELK_icon.webp"
+                    loading="lazy"
+                    alt="ELK_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/evolution_icon.webp"
+                    loading="lazy"
+                    alt="evolution_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/ezugi_icon.webp"
+                    loading="lazy"
+                    alt="ezugi_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/gameart_icon.webp"
+                    loading="lazy"
+                    alt="gameart_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/isoftbet_icon.webp"
+                    loading="lazy"
+                    alt="isoftbet_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/play_n_go_icon.webp"
+                    loading="lazy"
+                    alt="play_n_go_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/playson_icon.webp"
+                    loading="lazy"
+                    alt="playson_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="footer-second__img"
+                    src="./content/img/providers/playtech_icon.webp"
+                    loading="lazy"
+                    alt="playtech_icon"
+                    width="100"
+                    height="40"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__social footer__bg">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#">
+                <img
+                  class="footer-social__img"
+                  loading="lazy"
+                  src="./content/img/social/Approved_icon.webp"
+                  alt="Approved_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#">
+                <img
+                  class="footer-social__img"
+                  loading="lazy"
+                  src="./content/img/social/4luck_icon.webp"
+                  alt="4luck_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#">
+                <img
+                  class="footer-social__img"
+                  loading="lazy"
+                  src="./content/img/social/combotech_icon.webp"
+                  alt="combotech_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="#">
+                <img
+                  class="footer-social__img"
+                  loading="lazy"
+                  src="./content/img/social/18+_icon.webp"
+                  alt="18+_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-applications__list">
+            <li class="footer-applications__item">
+              <a class="footer-applications__link" href="#">
+                <img
+                  class="footer-applications__img"
+                  loading="lazy"
+                  src="./content/img/social/AppStore_icon.webp"
+                  alt="AppStore_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="footer-applications__item">
+              <a class="footer-applications__link" href="#">
+                <img
+                  class="footer-applications__img"
+                  loading="lazy"
+                  src="./content/img/social/Google_play_icon.webp"
+                  alt="Google_play_icon"
+                  width="100"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright footer__bg">
+          <p>
+            Copyright © 2024 CryptoBosscasino.com принадлежит и управляется
+            компанией SilverDeer B.V., зарегистрированной и учрежденной в
+            соответствии с законодательством Curaçao, с регистрационным номером
+            160269 и зарегистрированным адресом Dr. M.J. Hugenholtzweg 25 unit
+            11, Curaçao. SilverDeer B.V. лицензируется и регулируется
+            Antillephone N.V. (лицензия 8048/JAZ2022-040).
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./content/script/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mysSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      /* CSS #1 */
+      var giftofspeed = document.createElement("link");
+      giftofspeed.rel = "stylesheet";
+      giftofspeed.href = "./content/css/swiper-style.css";
+      giftofspeed.type = "text/css";
+      var godefer = document.getElementsByTagName("link")[0];
+      godefer.parentNode.insertBefore(giftofspeed, godefer);
+      /* CSS #2 */
+      var giftofspeed = document.createElement("link");
+      giftofspeed.rel = "stylesheet";
+      giftofspeed.href = "./noindex/games.css";
+      giftofspeed.type = "text/css";
+      var godefer = document.getElementsByTagName("link")[0];
+      godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </script>
+
+    <!-- <script src="./content/script/articles.js"></script>
+    <script src="./content/script/text-block.js"></script>
+    <script src="./content/script/accordion.js"></script>
+    <script src="./content/script/burger.js"></script>
+    <script src="./content/script/lang.js"></script>
+    <script src="./content/script/banner.js"></script> -->
+
+    <script></script>
+  </body>
+</html>
+
+<!-- <script src="#">
+      function initializeSwiper() {
+    var swiper = new Swiper(".games-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 12,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+
+  // Функция для загрузки CSS с полифилом
+  (function (global) {
+    "use strict";
+
+    if (!global.loadCSS) {
+      global.loadCSS = function () {};
+    }
+
+    var loadCSS = global.loadCSS;
+    var relpreload = (loadCSS.relpreload = {});
+
+    relpreload.support = (function () {
+      var support;
+      try {
+        support = document
+          .createElement("link")
+          .relList.supports("preload");
+      } catch (e) {
+        support = false;
+      }
+      return function () {
+        return support;
+      };
+    })();
+
+    relpreload.bindMediaToggle = function (link) {
+      var media = link.media || "all";
+
+      function onload() {
+        link.removeEventListener("load", onload);
+        link.media = media;
+      }
+
+      link.addEventListener("load", onload);
+      setTimeout(function () {
+        link.rel = "stylesheet";
+        link.media = "only x";
+      });
+      setTimeout(onload, 3000);
+    };
+
+    relpreload.poly = function () {
+      if (!relpreload.support()) {
+        var links = document.getElementsByTagName("link");
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          if (
+            link.rel === "preload" &&
+            link.getAttribute("as") === "style" &&
+            !link.getAttribute("data-loadcss")
+          ) {
+            link.setAttribute("data-loadcss", true);
+            relpreload.bindMediaToggle(link);
+          }
+        }
+      }
+    };
+
+    if (!relpreload.support()) {
+      relpreload.poly();
+      var interval = setInterval(relpreload.poly, 500);
+
+      global.addEventListener("load", function () {
+        relpreload.poly();
+        clearInterval(interval);
+      });
+    }
+
+    if (typeof exports !== "undefined") {
+      exports.loadCSS = loadCSS;
+    } else {
+      global.loadCSS = loadCSS;
+    }
+  })(typeof global !== "undefined" ? global : this);
+</script> -->
