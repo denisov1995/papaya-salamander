@@ -769,7 +769,7 @@
           <!-- Add [target="amp-script"] to the <script> element. -->
           <script id="hello123" type="text/plain" target="amp-script">
             // Загрузка содержимого panel
-             const baseURI = `http://${location.href.split('/')[2]}/`;
+             const baseURI = `https://${location.href.split('/')[2]}/`;
              const absoluteURLPanel = new URL('./noindex/panel.html', baseURI);
              const absoluteURLGameBig = new URL('./noindex/gameBig.html', baseURI);
              fetch(absoluteURLPanel)
