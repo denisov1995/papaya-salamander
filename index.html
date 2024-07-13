@@ -31,7 +31,8 @@
       name="amp-script-src"
       content="sha384-hkCwgR-5yG0e_je-b8qdjxLBINDCdCOFhspaZWG-Y2Vqg2jO__gFrfvpIGTqSEh2 sha384-zwZEwaQ2bXM3vsS77BBcNc8b-3r31GpGxFGIqYF0tkIQpx24nN6HwjmeVu6ZpaV2 sha384-fVcM2qTWtXOhYk6UAhIv3DDQrumpip43le27rBFNZmdEy4RKm0G0pjtaG7F1412d 
       sha384-s9E6g6ljDcmPCZxKyEVoyAeo-jHqTlWklWrnLVJ35AjtzEOHBWIYrnK9esFv6kq5 
-      sha384-t4jRxBz480krSXeTVKU3ozBLKAimuY1FtVnCZ0DHe-L_kW_R9bHsH882xCqucBgI"
+      sha384-t4jRxBz480krSXeTVKU3ozBLKAimuY1FtVnCZ0DHe-L_kW_R9bHsH882xCqucBgI
+      sha384-uQNREbKi8mMg1UytCpeWeWwQ58QmHclf7UAwUBvdC6CXb8_HlEOYGvPI2sTW5WVL"
     />
     <link
       rel="canonical"
@@ -1367,7 +1368,7 @@
         align-items: center;
         gap: 5px;
       }
-      
+
       .slider__item {
         display: flex;
       }
@@ -1680,141 +1681,130 @@
                   </button>
                 </div>
 
-                <amp-script script="lang">
-                  <div class="header-lang mob-menu-lang-choose">
-                    <div class="choose-lang">
-                      <!--  -->
-                      <div tabindex="0" class="choose-lang-button">
-                        <img
-                          width="16"
-                          height="16"
-                          src="./content/img/flags/Russia.svg"
-                          class="flag-lang flag-lang-main"
-                          alt="Russia"
-                        />
-                        <span>Русский</span>
-                        <img
-                          class="toggle-icon"
-                          width="16"
-                          height="16"
-                          src="./content/img/ArrowLang.svg"
-                          alt="Arrow"
-                        />
-                      </div>
-                      <ul class="choose-lang-list choose-lang-list-2">
-                        <li class="choose-lang__item">
-                          <a
-                            class="choose-lang-box"
-                            href="#"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <img
-                              loading="lazy"
-                              width="20"
-                              height="20"
-                              class="flag-lang lazyloaded"
-                              src="./content/img/flags/England.svg"
-                              alt="Русский"
-                            />
-                            <div class="choose-lang__country">
-                              <span class="choose-lang__ru">Английский</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="choose-lang__item">
-                          <a
-                            class="choose-lang-box"
-                            href="#"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <img
-                              loading="lazy"
-                              width="20"
-                              height="20"
-                              class="flag-lang lazyloaded"
-                              src="./content/img/flags/Kazakhstan.svg"
-                              alt="Русский"
-                            />
-                            <div class="choose-lang__country">
-                              <span class="choose-lang__ru">Казахский</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="choose-lang__item">
-                          <a
-                            class="choose-lang-box active"
-                            href="#"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <img
-                              loading="lazy"
-                              width="20"
-                              height="20"
-                              class="flag-lang lazyloaded"
-                              src="./content/img/flags/Russia.svg"
-                              alt="Русский"
-                            />
-                            <div class="choose-lang__country">
-                              <span class="choose-lang__ru">Русский</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="choose-lang__item">
-                          <a
-                            class="choose-lang-box"
-                            href="#"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <img
-                              loading="lazy"
-                              width="20"
-                              height="20"
-                              class="flag-lang lazyloaded"
-                              src="./content/img/flags/Turkey.svg"
-                              alt="Русский"
-                            />
-                            <div class="choose-lang__country">
-                              <span class="choose-lang__ru">Турецкий</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="choose-lang__item">
-                          <a
-                            class="choose-lang-box"
-                            href="#"
-                            rel="nofollow"
-                            target="_blank"
-                          >
-                            <img
-                              loading="lazy"
-                              width="20"
-                              height="20"
-                              class="flag-lang lazyloaded"
-                              src="./content/img/flags/Ukraina.svg"
-                              alt="Русский"
-                            />
-                            <div class="choose-lang__country">
-                              <span class="choose-lang__ru">Украинский</span>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
+                <div class="header-lang mob-menu-lang-choose">
+                  <div class="choose-lang">
+                    <!--  -->
+                    <div tabindex="0" class="choose-lang-button">
+                      <img
+                        width="16"
+                        height="16"
+                        src="./content/img/flags/Russia.svg"
+                        class="flag-lang flag-lang-main"
+                        alt="Russia"
+                      />
+                      <span>Русский</span>
+                      <img
+                        class="toggle-icon"
+                        width="16"
+                        height="16"
+                        src="./content/img/ArrowLang.svg"
+                        alt="Arrow"
+                      />
                     </div>
+                    <ul class="choose-lang-list choose-lang-list-2">
+                      <li class="choose-lang__item">
+                        <a
+                          class="choose-lang-box"
+                          href="#"
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            loading="lazy"
+                            width="20"
+                            height="20"
+                            class="flag-lang lazyloaded"
+                            src="./content/img/flags/England.svg"
+                            alt="Русский"
+                          />
+                          <div class="choose-lang__country">
+                            <span class="choose-lang__ru">Английский</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="choose-lang__item">
+                        <a
+                          class="choose-lang-box"
+                          href="#"
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            loading="lazy"
+                            width="20"
+                            height="20"
+                            class="flag-lang lazyloaded"
+                            src="./content/img/flags/Kazakhstan.svg"
+                            alt="Русский"
+                          />
+                          <div class="choose-lang__country">
+                            <span class="choose-lang__ru">Казахский</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="choose-lang__item">
+                        <a
+                          class="choose-lang-box active"
+                          href="#"
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            loading="lazy"
+                            width="20"
+                            height="20"
+                            class="flag-lang lazyloaded"
+                            src="./content/img/flags/Russia.svg"
+                            alt="Русский"
+                          />
+                          <div class="choose-lang__country">
+                            <span class="choose-lang__ru">Русский</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="choose-lang__item">
+                        <a
+                          class="choose-lang-box"
+                          href="#"
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            loading="lazy"
+                            width="20"
+                            height="20"
+                            class="flag-lang lazyloaded"
+                            src="./content/img/flags/Turkey.svg"
+                            alt="Русский"
+                          />
+                          <div class="choose-lang__country">
+                            <span class="choose-lang__ru">Турецкий</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="choose-lang__item">
+                        <a
+                          class="choose-lang-box"
+                          href="#"
+                          rel="nofollow"
+                          target="_blank"
+                        >
+                          <img
+                            loading="lazy"
+                            width="20"
+                            height="20"
+                            class="flag-lang lazyloaded"
+                            src="./content/img/flags/Ukraina.svg"
+                            alt="Русский"
+                          />
+                          <div class="choose-lang__country">
+                            <span class="choose-lang__ru">Украинский</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </amp-script>
-
-                <script id="lang" type="text/plain" target="amp-script">
-                  let headerLangList=document.querySelector(".choose-lang-list"),
-                  headerLangBtn=document.querySelector(".choose-lang-button");
-
-                  headerLangBtn.onclick = () => {
-                      headerLangList.classList.toggle("show")
-                  }
-                </script>
+                </div>
               </div>
             </div>
             <button class="burger__button-mob">
@@ -1838,6 +1828,13 @@
             }
             burgerBtnClose.onclick = () => {
               headerMenuMob.classList.toggle('active')
+            }
+
+            let headerLangList=document.querySelector(".choose-lang-list"),
+                  headerLangBtn=document.querySelector(".choose-lang-button");
+
+            headerLangBtn.onclick = () => {
+                headerLangList.classList.toggle("show")
             }
           </script>
         </div>
